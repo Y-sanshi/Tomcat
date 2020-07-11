@@ -305,17 +305,17 @@ public class JDTCompiler extends org.apache.jasper.compiler.Compiler {
             // Version format changed from Java 9 onwards.
             // Support old format that was used in EA implementation as well
             } else if(opt.equals("9") || opt.equals("1.9")) {
-                settings.put(CompilerOptions.OPTION_Source,
-                             CompilerOptions.VERSION_9);
+                settings.put(CompilerOptions.OPTION_Source, "9");
+                             //CompilerOptions.VERSION_9);   /* 由于CompilerOptions没有VERSION_9定义，这里赋值常量 */
             } else if(opt.equals("10")) {
-                settings.put(CompilerOptions.OPTION_Source,
-                             CompilerOptions.VERSION_10);
+                settings.put(CompilerOptions.OPTION_Source, "10");
+                             //CompilerOptions.VERSION_10);  /* 由于CompilerOptions没有VERSION_10定义，这里赋值常量 */
             } else if(opt.equals("11")) {
-                settings.put(CompilerOptions.OPTION_Source,
-                             CompilerOptions.VERSION_11);
+                settings.put(CompilerOptions.OPTION_Source, "11");
+                             //CompilerOptions.VERSION_11);  /* 由于CompilerOptions没有VERSION_11定义，这里赋值常量 */
             } else if(opt.equals("12")) {
-                settings.put(CompilerOptions.OPTION_Source,
-                             CompilerOptions.VERSION_12);
+                settings.put(CompilerOptions.OPTION_Source, "12");
+                             //CompilerOptions.VERSION_12);  /* 由于CompilerOptions没有VERSION_12定义，这里赋值常量 */
             } else if(opt.equals("13")) {
                 // Constant not available in latest ECJ version shipped with
                 // Tomcat. May be supported in a snapshot build.
@@ -380,25 +380,25 @@ public class JDTCompiler extends org.apache.jasper.compiler.Compiler {
             // Version format changed from Java 9 onwards.
             // Support old format that was used in EA implementation as well
             } else if(opt.equals("9") || opt.equals("1.9")) {
-                settings.put(CompilerOptions.OPTION_TargetPlatform,
-                             CompilerOptions.VERSION_9);
-                settings.put(CompilerOptions.OPTION_Compliance,
-                        CompilerOptions.VERSION_9);
+                settings.put(CompilerOptions.OPTION_TargetPlatform, "9");
+                             //CompilerOptions.VERSION_9);    /* 由于CompilerOptions没有VERSION_9定义，这里赋值常量 */
+                settings.put(CompilerOptions.OPTION_Compliance, "9");
+                        //CompilerOptions.VERSION_9);
             } else if(opt.equals("10")) {
-                settings.put(CompilerOptions.OPTION_TargetPlatform,
-                        CompilerOptions.VERSION_10);
-                settings.put(CompilerOptions.OPTION_Compliance,
-                        CompilerOptions.VERSION_10);
+                settings.put(CompilerOptions.OPTION_TargetPlatform, "10");
+                        //CompilerOptions.VERSION_10);        /* 由于CompilerOptions没有VERSION_10定义，这里赋值常量 */
+                settings.put(CompilerOptions.OPTION_Compliance, "10");
+                        //CompilerOptions.VERSION_10);
             } else if(opt.equals("11")) {
-                settings.put(CompilerOptions.OPTION_TargetPlatform,
-                        CompilerOptions.VERSION_11);
-                settings.put(CompilerOptions.OPTION_Compliance,
-                        CompilerOptions.VERSION_11);
+                settings.put(CompilerOptions.OPTION_TargetPlatform, "11");
+                        //CompilerOptions.VERSION_11);        /* 由于CompilerOptions没有VERSION_11定义，这里赋值常量 */
+                settings.put(CompilerOptions.OPTION_Compliance, "11");
+                        //CompilerOptions.VERSION_11);
             } else if(opt.equals("12")) {
-                settings.put(CompilerOptions.OPTION_TargetPlatform,
-                        CompilerOptions.VERSION_12);
-                settings.put(CompilerOptions.OPTION_Compliance,
-                        CompilerOptions.VERSION_12);
+                settings.put(CompilerOptions.OPTION_TargetPlatform, "12");
+                        //CompilerOptions.VERSION_12);        /* 由于CompilerOptions没有VERSION_12定义，这里赋值常量 */
+                settings.put(CompilerOptions.OPTION_Compliance, "12");
+                        //CompilerOptions.VERSION_12);
             } else if(opt.equals("13")) {
                 // Constant not available in latest ECJ version shipped with
                 // Tomcat. May be supported in a snapshot build.
