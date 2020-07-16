@@ -133,7 +133,7 @@
 
       <!--For clustering, please take a look at documentation at:
           /docs/cluster-howto.html  (simple how to)
-          /docs/config/cluster.html (reference documentation) -->
+          /docs/config/cluster.html (reference documentaton) -->
       <!--
       <Cluster className="org.apache.catalina.ha.tcp.SimpleTcpCluster"/>
       -->
@@ -151,7 +151,8 @@
 
       <Host name="localhost"  appBase="webapps"
             unpackWARs="true" autoDeploy="true">
-
+        <!--加载工程-->
+        <!--<Context path="/testweb" docBase="testweb.war" reloadable="true" />-->
         <!-- SingleSignOn valve, share authentication between web applications
              Documentation at: /docs/config/valve.html -->
         <!--
